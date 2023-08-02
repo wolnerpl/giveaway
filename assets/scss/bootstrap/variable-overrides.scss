@@ -1,0 +1,28 @@
+$enable-dark-mode: false;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$primary: #4D94FF;
+$gray-700: #374250;
+$body-color: #20334F;
+$link-decoration: none;
+$headings-font-weight: 400;
+$btn-font-weight: 700;
+$input-btn-font-size: .875em;
+$border-radius: 4px;
+
+$container-max-widths: (
+  sm: 375px,
+  md: 768px,
+  lg: 1140px,
+  xl: 1276px
+);
+
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 1140px,
+  xl: 1276px
+);

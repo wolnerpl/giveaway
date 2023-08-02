@@ -1,0 +1,8 @@
+deploy-prod.sh
+.DS_Store
+.idea
+node_modules
+*.log
+.local/public/
+*.map
+*.sql
