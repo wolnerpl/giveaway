@@ -1,16 +1,6 @@
 <?php /* Template Name: Giveaway */
 get_header(); ?>
 <div class="giveaway">
-    <div class="giveaway__background">
-        <picture>
-            <source media="(min-width:1140px)"
-                    srcset="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-lg']; ?>">
-            <source media="(min-width:768px)"
-                    srcset="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-md']; ?>">
-            <img src="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-sm']; ?>"
-                 alt="<?php echo get_field('giveaway_background_image')['alt']; ?>">
-        </picture>
-    </div>
     <div class="giveaway__wrapper">
         <div class="giveaway__header">
             <div class="giveaway__logo">
@@ -19,9 +9,22 @@ get_header(); ?>
                 </a>
             </div>
         </div>
-        <div class="giveaway__content">
-            <h1 class="giveaway__content-heading"><?php echo get_field('giveaway_heading'); ?></h1>
-            <p class="giveaway__content-description"><?php echo get_field('giveaway_description'); ?></p>
+        <div class="giveaway__content-wrap">
+            <div class="giveaway__content">
+                <h1 class="giveaway__content-heading"><?php echo get_field('giveaway_heading'); ?></h1>
+                <p class="giveaway__content-description"><?php echo get_field('giveaway_description'); ?></p>
+            </div>
+            <div class="giveaway__background">
+                <picture>
+                    <source media="(min-width:1140px)"
+                            srcset="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-lg']; ?>">
+                    <source media="(min-width:768px)"
+                            srcset="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-md']; ?>">
+                    <img src="<?php echo get_field('giveaway_background_image')['sizes']['giveaway-sm']; ?>"
+                         alt="<?php echo get_field('giveaway_background_image')['alt']; ?>"
+                         class="giveaway__background-image">
+                </picture>
+            </div>
         </div>
         <div class="giveaway__bar">
             <div class="giveaway__bar-row">

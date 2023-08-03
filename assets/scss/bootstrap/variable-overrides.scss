@@ -11,7 +11,8 @@ $input-btn-font-size: .875em;
 $border-radius: 4px;
 
 $container-max-widths: (
-  sm: 375px,
+  xs: 375px,
+  sm: 376px,
   md: 768px,
   lg: 1140px,
   xl: 1276px
@@ -24,6 +25,5 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 1140px,
-  xl: 1276px,
-  xxl: 1400px
+  xl: 1276px
 );

@@ -4,31 +4,8 @@
   background: linear-gradient(180deg, #FFF 0%, #F3F5F9 100%);
   overflow: hidden;
 
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 39%;
-    right: 13.4%;
-    opacity: .3;
-
-    @include media-breakpoint-up(md) {
-      display: block;
-      opacity: 1;
-    }
-
-    @include media-breakpoint-up(xl) {
-      left: inherit;
-      right: 0;
-    }
-
-    @include media-breakpoint-up(xxl) {
-      right: 13.4%;
-    }
-  }
-
   &__wrapper {
     @extend .container;
-    position: relative;
   }
 
   &__header {
@@ -39,14 +16,50 @@
     }
   }
 
+  &__content-wrap {
+    display: flex;
+  }
+
   &__content {
+    position: relative;
     width: 351px;
     max-width: 100%;
-    margin: 48px 0;
+    margin: 48px 0 33px;
+    z-index: 10;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 32px;
+    }
 
     @include media-breakpoint-up(lg) {
-      margin: 130px 0 169px;
+      margin: 130px 0 153px;
       width: 520px;
+    }
+  }
+
+  &__background {
+    position: relative;
+  }
+
+  &__background-image {
+    position: absolute;
+    top: -75px;
+    left: -175px;
+    opacity: .3;
+
+    @include media-breakpoint-up(md) {
+      opacity: 1;
+      top: -75px;
+      left: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: -115px;
+      left: -93px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+
     }
   }
 
