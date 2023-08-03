@@ -24,5 +24,6 @@ function theme_setup() {
     add_theme_support('title-tag');
     add_image_size('giveaway-lg', 784);
     add_image_size('giveaway-md', 721);
+    add_image_size('giveaway-sm', 338);
 }
 add_action('after_setup_theme', 'theme_setup');
